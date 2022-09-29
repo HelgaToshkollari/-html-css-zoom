@@ -21,28 +21,13 @@ body{
     position: fixed;
     right: 0;
     top: 5%;
-
 }
+
 .view-pannel > *{
     border-radius: 2px;
-   background-color: rgba(211, 211, 211, 0.389);
-   padding: .5rem;
-   margin-right: .5rem;
-}
-.row{
-    display: flex;
-}
-.user{
-    padding: .2rem .1rem;
-}
-    
-.img-user{
-   flex-grow: 1;
-   gap: 1px;
-}
-
-.img-user img{
-    width: 100%;
+    background-color: rgba(211, 211, 211, 0.389);
+    padding: .5rem;
+    margin-right: .5rem;
 }
 .con{
     position: relative;
@@ -51,3 +36,32 @@ body{
     right: 10%;
     width: 80%;
 }
+.row{
+    display: flex;
+}
+.user{
+    padding: .2rem .1rem;
+    position: relative ;
+}
+.img-user img{
+    width: 100%;
+    
+}    
+.img-user{
+   flex-grow: 1;
+}
+
+.user-info >*{
+    display: inline-block;
+    color: white;
+   
+}
+.user-info{
+    position: absolute;
+    bottom: 8px; 
+    left: 0;
+    background-color: rgba(117, 115, 115, 0.532);
+    padding: .2rem; 
+
+}
+
