@@ -8,11 +8,19 @@ body{
 
    
 }
+
+
 .container{
     width: 100vw;
     height: 100vh; 
     background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 10rem;
 }
+   
 
 .view-pannel{
     color: white;
@@ -21,6 +29,7 @@ body{
     position: fixed;
     right: 0;
     top: 5%;
+    z-index: 10;
 }
 
 .view-pannel > *{
@@ -29,13 +38,7 @@ body{
     padding: .5rem;
     margin-right: .5rem;
 }
-.con{
-    position: relative;
-    top: 20%;
-    left: 10%;
-    right: 10%;
-    width: 80%;
-}
+
 .row{
     display: flex;
 }
@@ -60,8 +63,40 @@ body{
     position: absolute;
     bottom: 8px; 
     left: 0;
-    background-color: rgba(117, 115, 115, 0.532);
+    background-color: rgba(117, 115, 115, 0.69);
     padding: .2rem; 
-
 }
 
+.user-bar{
+    background-color: gray;
+    padding: 2rem;
+    display: flex;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.bar-options{
+    display: flex;
+}
+.bar-options>*{ 
+    display: inline-block;
+    text-align: center;
+}
+.options-left>*{
+    display: inline-block;
+    
+}
+.options-center>*{
+    display: inline-block;
+}
+
+.options-center{
+    flex-basis: 72%;
+}
+.options-right{
+    flex-basis: 10%;
+    text-align: right;
+}
