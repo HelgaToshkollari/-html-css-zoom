@@ -37,6 +37,7 @@ body{
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .user{
@@ -64,6 +65,7 @@ body{
     left: 0;
     background-color: rgba(117, 115, 115, 0.69);
     padding: .5rem; 
+    
 }
 
 .user-bar{
@@ -73,23 +75,28 @@ body{
 
 .bar-options{
     display: flex;
+    justify-content: space-between;
 }
 .bar-options>*{ 
     display: inline-block;
     text-align: center;
+    color: white;
 }
 .options-left>*{
     display: inline-block;
+    padding: .5rem;
     
 }
 .options-center>*{
     display: inline-block;
+    padding: .5rem;   
 }
 
-.options-center{
-    flex-basis: 72%;
-}
 .options-right{
-    flex-basis: 10%;
     text-align: right;
+    color: red;
+    background-color: rgba(255, 255, 255, 0.067);
+    line-height: 3rem;
+    
+    
 }
